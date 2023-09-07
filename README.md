@@ -27,3 +27,7 @@ Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius
 6. Therefore, the limit is \( \pi \times 1 = \pi \).
 
 This proves that the \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
+
+Each of these horizontal lines approaches a multiple of pi as R goes to infinity
+![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/2a204d04-0238-44ed-a5f4-a91fe5c68617)
+
