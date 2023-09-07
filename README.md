@@ -1,5 +1,5 @@
 ## Theorem
-"Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. 
+Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. 
 Divide the circle into \( 2R \) equal slices. Then the \( y \)-coordinate of the first slice's intersection point 
 above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \)."
 
