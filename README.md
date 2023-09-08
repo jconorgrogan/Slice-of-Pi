@@ -39,7 +39,7 @@ The infinite prime ladder, and the Grogan Rollercoaster
 ![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/f45b1293-16f1-41fd-abdf-ead3df0f4284)
 
 
-Here is the code:
+##Here is the code:
 
 import matplotlib.pyplot as plt
 import numpy as np
