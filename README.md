@@ -1,4 +1,4 @@
-## Theorem
+## Grogan Slice of Pi Theorem
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. Divide the circle into \( 2R \) equal slices. The \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
 
 ### Definitions and Assumptions
@@ -22,7 +22,7 @@ Utilizing the limit identity \( \lim_{u \to 0} \frac{\sin(u)}{u} = 1 \), the lim
 **Conclusion**:
     - Therefore, the \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
   
-## Generalized Theorem for k-th Intersection Point
+## Generalized Slice of Pi Theorem for k-th Intersection Point
 
 ### Theorem
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin and divide it into \( 2R \) equal slices. The \( y \)-coordinate of the \( k \)-th slice's intersection point above the \( x \)-axis approaches \( k\pi \) as \( n \rightarrow \infty \).
