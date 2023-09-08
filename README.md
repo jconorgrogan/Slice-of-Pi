@@ -23,10 +23,10 @@ Utilizing the limit identity \( \lim_{u \to 0} \frac{\sin(u)}{u} = 1 \), the lim
 ![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/bed128bf-b7ac-45d1-9fc7-805c611892bd)
 
 
-4. **Conclusion**:
+**Conclusion**:
     - Therefore, the \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
   
-5. ## Generalized Theorem for k-th Intersection Point
+## Generalized Theorem for k-th Intersection Point
 
 ### Theorem
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin and divide it into \( 2R \) equal slices. The \( y \)-coordinate of the \( k \)-th slice's intersection point above the \( x \)-axis approaches \( k\pi \) as \( n \rightarrow \infty \).
