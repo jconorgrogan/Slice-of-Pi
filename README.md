@@ -34,6 +34,8 @@ Each of these horizontal lines approaches a multiple of pi as R goes to infinity
 
 As R increases, each 2nd node y coordinate moves towards 2pi, 3rd node 3pi, etc. 
 How each point converges to these multiples of pi creates some extremely interesting fractals which are worthy of future research
+
+The infinite prime ladder, and the Grogan Rollercoaster 
 ![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/f45b1293-16f1-41fd-abdf-ead3df0f4284)
 
 
