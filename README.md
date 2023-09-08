@@ -19,10 +19,6 @@ The limit becomes \( \lim_{u \to 0} \frac{\pi}{u} \sin(u) \).
 
 Utilizing the limit identity \( \lim_{u \to 0} \frac{\sin(u)}{u} = 1 \), the limit is \( \pi \).
 
-
-![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/bed128bf-b7ac-45d1-9fc7-805c611892bd)
-
-
 **Conclusion**:
     - Therefore, the \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
   
@@ -56,6 +52,10 @@ Therefore, as \( n \rightarrow \infty \), the \( y \)-coordinate of the \( k \)-
 
 
 5. **Visualizations**:
+
+
+![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/bed128bf-b7ac-45d1-9fc7-805c611892bd)
+
 Each of these horizontal lines approaches a multiple of pi as R goes to infinity
 ![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/2a204d04-0238-44ed-a5f4-a91fe5c68617)
 
