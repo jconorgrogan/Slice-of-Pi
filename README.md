@@ -45,6 +45,9 @@ approaches_pi = math.isclose(y_values[-1], math.pi, rel_tol=1e-6)
 
 approaches_pi, y_values[-1]
 
+![image](https://github.com/jconorgrogan/Grogans-Slice-of-Pi/assets/130090573/bed128bf-b7ac-45d1-9fc7-805c611892bd)
+
+
 
 4. **Conclusion**:
     - Therefore, the \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
