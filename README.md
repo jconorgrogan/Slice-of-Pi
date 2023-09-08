@@ -19,21 +19,19 @@ The limit becomes \( \lim_{u \to 0} \frac{\pi}{u} \sin(u) \).
 
 Utilizing the limit identity \( \lim_{u \to 0} \frac{\sin(u)}{u} = 1 \), the limit is \( \pi \).
 
-4. ### Code to demonstrate
+
+### Code to demonstrate
 
 import numpy as np
 import matplotlib.pyplot as plt
 import math
 
-# Define the function to calculate y-coordinate based on n
 def f(n):
     return 2**n * math.sin(math.pi / 2**n)
 
-# Calculate the y-coordinate values for different n
 n_values = range(1, 100)
 y_values = [f(n) for n in n_values]
 
-# Plot the y-coordinate values
 plt.plot(n_values, y_values, label='$2^n \\sin(\\frac{\\pi}{2^n})$')
 plt.axhline(y=math.pi, color='r', linestyle='--', label='$\\pi$')
 plt.xlabel('n')
@@ -41,7 +39,6 @@ plt.ylabel('y-coordinate')
 plt.legend()
 plt.show()
 
-# Check if the y-coordinate approaches pi
 approaches_pi = math.isclose(y_values[-1], math.pi, rel_tol=1e-6)
 
 approaches_pi, y_values[-1]
