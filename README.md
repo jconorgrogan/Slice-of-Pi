@@ -1,4 +1,4 @@
-## Grogan Slice of Pi Theorem
+##  Slice of Pi Theorem
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. Divide the circle into \( 2R \) equal slices. The \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
 
 ### Definitions and Assumptions
