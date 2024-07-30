@@ -1,4 +1,15 @@
 ##  Slice of Pi Theorem
+TLDR;
+π is equal to the limit, as n approaches infinity, of:
+2^n * √(2 - (series of nested √(2+√2...) with n-1 levels of nesting))
+More formally, we can express this as:
+π = lim(n→∞) [2^n * √(2 - A_n)]
+Where A_n is defined as:
+A_1 = 0
+For n > 1: A_n = √(2 + A_(n-1))
+
+
+
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. Divide the circle into \( 2R \) equal slices. The \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
 
 ### Definitions and Assumptions
