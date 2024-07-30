@@ -1,16 +1,5 @@
-##  Slice of Pi Theorem
-TLDR;
-π is equal to the limit, as n approaches infinity, of:
-2^n * √(2 - (series of nested √(2+√2...) with n-1 levels of nesting))
-More formally, we can express this as:
-π = lim(n→∞) [2^n * √(2 - A_n)]
-Where A_n is defined as:
-A_1 = 0
-For n > 1: A_n = √(2 + A_(n-1))
-
-
-<img width="494" alt="image" src="https://github.com/user-attachments/assets/fa1a47be-5175-4bf4-86a5-00ed6855fdf7">
-
+##  Slice of Pi 
+TLDR; Geomtric way of representing a derivation of Viete's formula for pi that involves nested square roots of two
 
 ### Definitions and Assumptions
 
