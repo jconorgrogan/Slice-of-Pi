@@ -9,10 +9,13 @@ A_1 = 0
 For n > 1: A_n = √(2 + A_(n-1))
 
 
+<img width="494" alt="image" src="https://github.com/user-attachments/assets/fa1a47be-5175-4bf4-86a5-00ed6855fdf7">
+
+
+### Definitions and Assumptions
 
 Let \( R = 2^n \) for some positive integer \( n \). Consider a circle of radius \( R \) centered at the origin. Divide the circle into \( 2R \) equal slices. The \( y \)-coordinate of the first slice's intersection point above the \( x \)-axis approaches \( \pi \) as \( n \rightarrow \infty \).
 
-### Definitions and Assumptions
 1. Define \( R = 2^n \) where \( n \) is a positive integer.
     - ![R = 2^n](https://latex.codecogs.com/gif.latex?R%20%3D%202%5En)
 2. Consider a circle of radius \( R \) centered at the origin.
