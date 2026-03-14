@@ -1,0 +1,353 @@
+￼
+
+\begin{theorem}
+Let
+\[
+s=\frac12+i\gamma,\qquad a=1-s=\frac12-i\gamma,
+\]
+and assume
+\[
+\zeta(s)=0,\qquad \gamma>\frac{\pi}{\log 2}.
+\]
+For \(N\in\mathbb Z_{\ge 0}\), define
+\[
+S_\gamma(N):=\sum_{n=1}^N n^{-s},\qquad S_\gamma(0):=0.
+\]
+For \(p,t\in\mathbb Z_{\ge 1}\), set
+\[
+D_\gamma(t,p):=S_\gamma(t)-p^a\,S_\gamma\!\left(\Bigl\lfloor \frac{t}{p}\Bigr\rfloor\right),
+\]
+and
+\[
+\tau_p(\gamma):=\inf\{t\ge 1:\ |D_\gamma(t,p)|\ge \sqrt p\}\in \mathbb Z_{\ge 1}\cup\{\infty\}.
+\]
+
+Then there exists a unique \(\phi_\gamma\in(0,\pi)\) such that
+\[
+e^{\phi_\gamma/(2\gamma)}=\cos\phi_\gamma+2\gamma\sin\phi_\gamma.
+\]
+If
+\[
+\kappa_\gamma:=e^{\phi_\gamma/\gamma},
+\]
+then
+\[
+\lim_{p\to\infty}\frac{\tau_p(\gamma)}{p}=\kappa_\gamma.
+\]
+
+Moreover, as \(\gamma\to\infty\),
+\[
+\phi_\gamma=\pi-\frac1\gamma+O(\gamma^{-2}),
+\qquad
+\gamma\log \kappa_\gamma=\pi-\frac1\gamma+O(\gamma^{-2}).
+\]
+Consequently, for every sequence \((\gamma_n)\) such that
+\[
+\zeta\!\left(\frac12+i\gamma_n\right)=0,\qquad \gamma_n\to\infty,
+\]
+one has
+\[
+\lim_{n\to\infty}\gamma_n\log\!\left(\lim_{p\to\infty}\frac{\tau_p(\gamma_n)}{p}\right)=\pi.
+\]
+No simplicity hypothesis on the zero is used.
+\end{theorem}
+
+\begin{proof}
+For \(N\ge 1\), Euler--Maclaurin gives
+\[
+\sum_{n=1}^N n^{-s}
+=
+\zeta(s)+\frac{N^{1-s}}{1-s}+\frac12 N^{-s}+O_\gamma(N^{-3/2}).
+\]
+Since \(\zeta(s)=0\) and \(a=1-s\),
+\begin{equation}
+S_\gamma(N)=\frac{N^a}{a}+\frac12 N^{-s}+O_\gamma(N^{-3/2}).
+\label{eq:EM}
+\end{equation}
+
+If \(t<p\), then \(\lfloor t/p\rfloor=0\), hence \(D_\gamma(t,p)=S_\gamma(t)\). By
+\eqref{eq:EM},
+\[
+|D_\gamma(t,p)|
+\le \frac{\sqrt t}{|a|}+C_\gamma
+\le \frac{\sqrt p}{|a|}+C_\gamma<\sqrt p
+\]
+for all sufficiently large \(p\), because \(|a|=\sqrt{\frac14+\gamma^2}>1\). Thus
+\begin{equation}
+\tau_p(\gamma)\ge p
+\qquad (p\to\infty).
+\label{eq:before-p}
+\end{equation}
+
+Now suppose \(p\le t<2p\). Then \(\lfloor t/p\rfloor=1\), so
+\[
+D_\gamma(t,p)=S_\gamma(t)-p^a.
+\]
+Write \(\kappa=t/p\in[1,2)\). Using \eqref{eq:EM},
+\[
+p^{-a}D_\gamma(t,p)
+=
+\frac{\kappa^a}{a}-1+\frac{1}{2p}\kappa^{-s}+O_\gamma(p^{-2}),
+\]
+uniformly for \(\kappa\in[1,2)\). Therefore
+\begin{equation}
+\left|
+\frac{|D_\gamma(t,p)|}{\sqrt p}-F_\gamma(\kappa)
+\right|
+\le \frac{C_\gamma}{p},
+\qquad
+F_\gamma(\kappa):=\left|\frac{\kappa^a}{a}-1\right|.
+\label{eq:profile}
+\end{equation}
+
+Set
+\[
+A:=|a|^2=\frac14+\gamma^2,
+\qquad
+\phi:=\gamma\log\kappa.
+\]
+Then \(\kappa^a=e^{\phi/(2\gamma)}e^{-i\phi}\), and a direct calculation yields
+\begin{equation}
+F_\gamma(\kappa)^2-1
+=
+\frac{e^{\phi/(2\gamma)}}{A}
+\Bigl(e^{\phi/(2\gamma)}-\cos\phi-2\gamma\sin\phi\Bigr).
+\label{eq:F-formula}
+\end{equation}
+Define
+\[
+Q_\gamma(\phi):=e^{-\phi/(2\gamma)}(\cos\phi+2\gamma\sin\phi).
+\]
+By \eqref{eq:F-formula},
+\[
+F_\gamma(\kappa)<1 \iff Q_\gamma(\phi)>1,
+\qquad
+F_\gamma(\kappa)=1 \iff Q_\gamma(\phi)=1.
+\]
+
+Moreover,
+\[
+Q_\gamma'(\phi)
+=
+e^{-\phi/(2\gamma)}
+\left(
+\left(2\gamma-\frac{1}{2\gamma}\right)\cos\phi-2\sin\phi
+\right).
+\]
+Since \(2\gamma-\frac1{2\gamma}>0\), the bracket is of the form
+\(R\cos(\phi+\alpha)\) with \(R>0\) and \(\alpha\in(0,\pi/2)\). Hence
+\(Q_\gamma'\) has exactly one zero in \((0,\pi)\). As
+\[
+Q_\gamma(0)=1,\qquad
+Q_\gamma'(0)=2\gamma-\frac1{2\gamma}>0,\qquad
+Q_\gamma(\pi)=-e^{-\pi/(2\gamma)}<1,
+\]
+there is a unique \(\phi_\gamma\in(0,\pi)\) such that
+\[
+Q_\gamma(\phi_\gamma)=1,
+\]
+equivalently
+\begin{equation}
+e^{\phi_\gamma/(2\gamma)}
+=
+\cos\phi_\gamma+2\gamma\sin\phi_\gamma.
+\label{eq:def-phi}
+\end{equation}
+Set
+\[
+\kappa_\gamma:=e^{\phi_\gamma/\gamma}.
+\]
+Since \(\phi_\gamma<\pi\) and \(\gamma>\pi/\log 2\),
+\[
+1<\kappa_\gamma<e^{\pi/\gamma}<2.
+\]
+Also,
+\begin{equation}
+F_\gamma(\kappa)<1 \quad (1<\kappa<\kappa_\gamma),
+\qquad
+F_\gamma(\kappa)>1 \quad (\kappa_\gamma<\kappa<e^{\pi/\gamma}).
+\label{eq:sign}
+\end{equation}
+
+We now handle the discrete neighborhood of \(\kappa=1\). Let
+\[
+z_0:=\frac1a-1=\frac{\frac12+i\gamma}{\frac12-i\gamma}.
+\]
+Then \(|z_0|=1\) and
+\[
+\Re z_0=\frac{\frac14-\gamma^2}{\frac14+\gamma^2}<0.
+\]
+Fix \(h\in\mathbb Z_{\ge 0}\), and put \(t=p+h\). From \eqref{eq:EM},
+\[
+p^{-a}D_\gamma(p+h,p)
+=
+\frac{(1+h/p)^a}{a}-1+\frac{1}{2p}(1+h/p)^{-s}+O_{\gamma,h}(p^{-2}),
+\]
+so
+\begin{equation}
+p^{-a}D_\gamma(p+h,p)
+=
+z_0+\frac{h+\frac12}{p}+O_{\gamma,h}(p^{-2}).
+\label{eq:local}
+\end{equation}
+Therefore
+\[
+\frac{|D_\gamma(p+h,p)|^2}{p}
+=
+1+\frac{2\Re z_0\,(h+\frac12)}{p}+O_{\gamma,h}(p^{-2})<1
+\]
+for all sufficiently large \(p\). Thus, for every fixed \(h\ge 0\),
+\begin{equation}
+|D_\gamma(p+h,p)|<\sqrt p
+\qquad (p\to\infty).
+\label{eq:fixed-h}
+\end{equation}
+
+Next, \(F_\gamma(1)=1\), and differentiating \(F_\gamma(\kappa)=|\kappa^a/a-1|\) at
+\(\kappa=1\) gives
+\[
+F_\gamma'(1)=\Re z_0<0.
+\]
+Hence there exist \(\delta_\gamma,c_\gamma>0\) such that
+\begin{equation}
+F_\gamma(1+u)\le 1-c_\gamma u
+\qquad (0\le u\le \delta_\gamma).
+\label{eq:linear-gap}
+\end{equation}
+
+Fix \(\varepsilon>0\) so small that
+\[
+0<\varepsilon<\frac12\min\{\kappa_\gamma-1,\ \delta_\gamma,\ e^{\pi/\gamma}-\kappa_\gamma\}.
+\]
+Choose \(M\in\mathbb N\) so large that \(M>2C_\gamma/c_\gamma\). If
+\(M\le h\le \varepsilon p\), then \(u=h/p\in[0,\delta_\gamma]\), and
+\eqref{eq:profile} together with \eqref{eq:linear-gap} gives
+\[
+\frac{|D_\gamma(p+h,p)|}{\sqrt p}
+\le
+F_\gamma(1+h/p)+\frac{C_\gamma}{p}
+\le
+1-c_\gamma\frac{h}{p}+\frac{C_\gamma}{p}
+<1.
+\]
+Combining this with \eqref{eq:fixed-h}, we obtain
+\begin{equation}
+|D_\gamma(t,p)|<\sqrt p
+\qquad
+\bigl(p\le t\le (1+\varepsilon)p\bigr),
+\label{eq:first-window}
+\end{equation}
+for all sufficiently large \(p\).
+
+Since \(F_\gamma<1\) on \((1,\kappa_\gamma)\), compactness and \eqref{eq:sign} imply that
+there exists \(\eta_\gamma(\varepsilon)>0\) such that
+\[
+F_\gamma(\kappa)\le 1-\eta_\gamma(\varepsilon)
+\qquad
+(1+\varepsilon\le \kappa\le \kappa_\gamma-\varepsilon).
+\]
+Using \eqref{eq:profile} once again,
+\begin{equation}
+|D_\gamma(t,p)|<\sqrt p
+\qquad
+\bigl((1+\varepsilon)p\le t\le (\kappa_\gamma-\varepsilon)p\bigr),
+\label{eq:middle-window}
+\end{equation}
+for all sufficiently large \(p\). Together with \eqref{eq:before-p},
+\eqref{eq:first-window}, and \eqref{eq:middle-window}, this yields
+\begin{equation}
+\tau_p(\gamma)>(\kappa_\gamma-\varepsilon)p
+\qquad (p\to\infty).
+\label{eq:lower}
+\end{equation}
+
+For the upper bound, the interval
+\[
+\left[\kappa_\gamma+\frac{\varepsilon}{2},\,\kappa_\gamma+\varepsilon\right]
+\]
+is compactly contained in \((\kappa_\gamma,e^{\pi/\gamma})\). Hence, by
+\eqref{eq:sign}, there exists \(\eta_\gamma'(\varepsilon)>0\) such that
+\[
+F_\gamma(\kappa)\ge 1+\eta_\gamma'(\varepsilon)
+\qquad
+\left(\kappa_\gamma+\frac{\varepsilon}{2}\le \kappa\le \kappa_\gamma+\varepsilon\right).
+\]
+Let
+\[
+t_+(p):=\left\lceil\left(\kappa_\gamma+\frac{\varepsilon}{2}\right)p\right\rceil.
+\]
+For all sufficiently large \(p\),
+\[
+\frac{t_+(p)}{p}\in
+\left[\kappa_\gamma+\frac{\varepsilon}{2},\,\kappa_\gamma+\varepsilon\right],
+\]
+so \eqref{eq:profile} gives
+\[
+|D_\gamma(t_+(p),p)|>\sqrt p.
+\]
+Therefore
+\begin{equation}
+\tau_p(\gamma)\le t_+(p)\le (\kappa_\gamma+\varepsilon)p
+\qquad (p\to\infty).
+\label{eq:upper}
+\end{equation}
+
+Since \(\varepsilon>0\) is arbitrary, \eqref{eq:lower} and \eqref{eq:upper} imply
+\[
+\lim_{p\to\infty}\frac{\tau_p(\gamma)}{p}=\kappa_\gamma.
+\]
+
+It remains to analyze \(\kappa_\gamma\) for large \(\gamma\). From
+\eqref{eq:def-phi},
+\[
+Q_\gamma(\pi-\delta)
+=
+e^{-(\pi-\delta)/(2\gamma)}
+\bigl(-\cos\delta+2\gamma\sin\delta\bigr)\to+\infty
+\qquad (\gamma\to\infty)
+\]
+for each fixed \(\delta\in(0,\pi)\). Hence \(\phi_\gamma\to\pi\). Write
+\[
+\varepsilon_\gamma:=\pi-\phi_\gamma.
+\]
+Then \(\varepsilon_\gamma\to 0\), and \eqref{eq:def-phi} becomes
+\begin{equation}
+2\gamma\sin\varepsilon_\gamma
+=
+e^{(\pi-\varepsilon_\gamma)/(2\gamma)}+\cos\varepsilon_\gamma.
+\label{eq:eps}
+\end{equation}
+The right-hand side is \(O(1)\), so \(\gamma\varepsilon_\gamma=O(1)\), hence
+\(\varepsilon_\gamma=O(\gamma^{-1})\). Expanding \eqref{eq:eps},
+\[
+2\gamma\varepsilon_\gamma+O(\gamma\varepsilon_\gamma^3)
+=
+1+\frac{\pi-\varepsilon_\gamma}{2\gamma}+O(\gamma^{-2})
++
+1-\frac{\varepsilon_\gamma^2}{2}+O(\varepsilon_\gamma^4).
+\]
+Because \(\varepsilon_\gamma=O(\gamma^{-1})\), all discarded terms are
+\(O(\gamma^{-2})\), so
+\[
+2\gamma\varepsilon_\gamma
+=
+2+\frac{\pi}{2\gamma}+O(\gamma^{-2}).
+\]
+In particular,
+\[
+\varepsilon_\gamma=\frac1\gamma+O(\gamma^{-2}),
+\]
+and therefore
+\[
+\phi_\gamma=\pi-\frac1\gamma+O(\gamma^{-2}).
+\]
+Since \(\kappa_\gamma=e^{\phi_\gamma/\gamma}\),
+\[
+\gamma\log\kappa_\gamma=\phi_\gamma
+=
+\pi-\frac1\gamma+O(\gamma^{-2}).
+\]
+
+The final assertion follows immediately by applying this estimate to any zero
+sequence \(\gamma_n\to\infty\).
+\end{proof}
